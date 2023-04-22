@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class ArticleController {
 
-    @GetMapping("/king")
+    @GetMapping("/index")
     String index(){
         return "articlecard";
     }
@@ -14,5 +14,10 @@ public class ArticleController {
     @GetMapping("/allusers")
     String users(){
         return "allusers";
+    }
+
+    @GetMapping("/addnew")
+    String addnew(){
+        return "addnewarticle";
     }
 }
