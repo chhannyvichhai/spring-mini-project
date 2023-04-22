@@ -7,11 +7,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Article {
-    private int id;
-    private String title;
-    private String description;
-    private String imgURL;
-    private Author author;
-    private Category[] category;
+public class Category {
+    private int categoryId;
+    private String categoryName;
 }
